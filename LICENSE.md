@@ -1,7 +1,6 @@
 # License
 
-
-[Liberatory Projects](https://www.tobeyblaze.com/) © 2023 by [Tobey Aumann](https://linkedin.com/in/tobeyaumann) is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) ![](https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/license_badges/big/by_nc_nd.svg)
+![](https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/svg/cc/license_badges/big/by_nc_nd.svg) [Liberatory Projects](https://www.tobeyblaze.com/) © 2023 by [Tobey Aumann](https://linkedin.com/in/tobeyaumann) is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
 
 
 Further ethical requirements to use these works are adopted from [Section 3 of the Hippocratic License]
