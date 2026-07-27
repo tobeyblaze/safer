@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CHANGE ME: Page title -->
   <title>You Are Safe With Me — Safer Spaces Pledge - Tobey Aumann</title>
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="pin-favicon.svg">
 
@@ -47,55 +47,56 @@
     }
 
     /* CSS Badge graphic (3x Larger) */
-.badge-icon {
-  width: 220px;        /* 110px * 3 */
-  height: 220px;       /* 110px * 3 */
-  border-radius: 50%;
-  border: 12px solid #eab308; /* 4px * 3 */
-  background: conic-gradient(
-    #e11d48 0deg 30deg,
-    #f97316 30deg 60deg,
-    #eab308 60deg 90deg,
-    #22c55e 120deg 160deg,
-    #3b82f6 160deg 200deg,
-    #a855f7 200deg 230deg,
-    #38bdf8 230deg 260deg,
-    #f472b6 260deg 290deg,
-    #FFFFFF 290deg 300deg,
-    #000 300deg 330deg,
-    #713f12 330deg 360deg
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 60px #a855f7; /* Scaled box-shadow */
-}
+    .badge-icon {
+      width: 220px;        /* 110px * 3 */
+      height: 220px;       /* 110px * 3 */
+      border-radius: 50%;
+      border: 12px solid #eab308; /* 4px * 3 */
+      background: conic-gradient(
+        #e11d48 0deg 30deg,
+        #f97316 30deg 60deg,
+        #eab308 60deg 90deg,
+        #22c55e 120deg 160deg,
+        #3b82f6 160deg 200deg,
+        #a855f7 200deg 230deg,
+        #38bdf8 230deg 260deg,
+        #f472b6 260deg 290deg,
+        #FFFFFF 290deg 300deg,
+        #000 300deg 330deg,
+        #713f12 330deg 360deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 60px #a855f7; /* Scaled box-shadow */
+    }
 
-.badge-inner {
-  width: 134px;        /* 82px * 3 */
-  height: 134px;       /* 82px * 3 */
-  border-radius: 50%;
-  background: #121214;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: 'Protest Guerrilla', display, sans-serif;
-  line-height: 1;
-}
+    .badge-inner {
+      width: 134px;        /* 82px * 3 */
+      height: 134px;       /* 82px * 3 */
+      border-radius: 50%;
+      background: #121214;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Protest Guerrilla', display, sans-serif;
+      line-height: 1;
+    }
 
-.badge-inner span.top-bottom {
-  font-size: 1.10rem;  /* 0.55rem * 3 */
-  letter-spacing: 1.0px; /* 0.5px * 3 */
-  color: #d4d4d8;
-}
+    .badge-inner span.top-bottom {
+      font-size: 1.10rem;  /* 0.55rem * 3 */
+      letter-spacing: 1.0px; /* 0.5px * 3 */
+      color: #d4d4d8;
+    }
 
-.badge-inner span.center {
-  font-size: 2.2rem;   /* 1.1rem * 3 */
-  color: #38bdf8;
-  margin: 4px 0;       /* 2px * 3 */
-}
+    .badge-inner span.center {
+      font-size: 2.2rem;   /* 1.1rem * 3 */
+      color: #38bdf8;
+      margin: 4px 0;       /* 2px * 3 */
+    }
+
     /* Headings & Text */
     h1 {
       font-family: 'Protest Guerrilla', display, sans-serif;
@@ -106,8 +107,8 @@
       /* CHANGE ME: Main heading accent color */
       color: #38bdf8;
     }
-    /* Secondary Header in Protest Guerrilla */
 
+    /* Secondary Header in Protest Guerrilla */
     h2 {
       font-family: 'Protest Guerrilla', display, sans-serif;
       font-size: clamp(.9rem, 2.5vw, 2.25rem); /* Set to match the largest heading size. prev: 1rem, 2.5vw, 1.25rem */
@@ -136,93 +137,15 @@
     /* All pledge headings using <h2> with Protest Guerrilla */
     .pledge-block h2 {
       font-family: 'Protest Guerrilla', display, sans-serif;
-      color: #f4f4f5;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 0.15rem;
       font-weight: normal;
+      color: #37bdf8;
     }
 
     .pledge-block p {
       line-height: 1.35;
-      color: #d4d4d8;
-    }
-
-    /* 5Ds Special Section Styling */
-    .five-ds {
-      text-align: center;
-      padding: 0.2rem 0;
-    }
-
-    .five-ds h2 {
-      /* CHANGE ME: 5Ds Title highlight color */
-      color: ##38bdf8;
-      text-align: center;
-    }
-
-    .five-ds .ds-flow {
-      font-family: 'Protest Guerrilla', display, sans-serif;
-      font-size: 0.75rem;
-      /* CHANGE ME: 5Ds Flow accent color */
-      letter-spacing: 0.5px;
-      margin-top: 0.1rem;
-    }
-
-    /* Form Styles */
-    form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 0.25rem;
-    }
-
-    @media (min-width: 480px) {
-      form {
-        flex-direction: row;
-      }
-    }
-
-    input[type="email"] {
-      flex: 1;
-      padding: 0.6rem 0.85rem;
-      border: 2px solid #27272a;
-      background: #18181b;
-      color: #ffffff;
-      font-family: inherit;
-      font-size: 0.9rem;
-      border-radius: 6px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    input[type="email"]:focus {
-      /* CHANGE ME: Input focus border color */
-      border-color: #38bdf8;
-    }
-
-    button {
-      padding: 0.6rem 1.25rem;
-      /* CHANGE ME: Button color */
-      background: #38bdf8;
-      color: #09090b;
-      border: none;
-      font-family: 'Protest Guerrilla', display, sans-serif;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      border-radius: 6px;
-      cursor: pointer;
-      letter-spacing: 0.5px;
-      transition: opacity 0.2s, transform 0.1s;
-      white-space: nowrap;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    button:active {
-      transform: scale(0.98);
     }
 
     .footer-credit {
@@ -251,12 +174,8 @@
     <!-- CHANGE ME: Main Title (h1) -->
     <h1>PLEDGE TO MAKE SAFER SPACES</h1>
 
-    <!-- CHANGE ME: Sub-heading in Protest Guerrilla (h2) -->
-    <h2 class="sub-header">This project began at the Agile 2023 conference in Orlando, with 100 pins and the trust of a community.</h2>
-    <p>In collaboration with <a target="_blank" rel="nofollow noopener" href="https://agilecoachcamp.net/">Agile Coach Camp World Wide</a>, <a target="_blank" rel="nofollow noopener" href="https://womeninagile.org/">Women in Agile</a>, and <a target="_blank" rel="nofollow noopener" href="https://www.agileincolor.org/">Agile in Color</a>, <a target="_blank" rel="nofollow noopener" href="https://linkedin.com/in/tobeyaumann">Tobey</a> gifted pins to those who would pledge the following:</p>
-    
-    <h2>While I wear this pin, I will...</h2>
-
+    <h2 class="sub-header">While I wear this pin, I will...</h2>
+    <p></p>
     <!-- FULL PLEDGE TEXT FROM PDF USING H2 HEADINGS -->
     <div class="pledge-content">
       <div class="pledge-block">
@@ -266,7 +185,7 @@
 
       <div class="pledge-block">
         <h2>INTERVENE WITH THE 5DS</h2>
-        <div class="ds-flow">DISTRACT &rarr; DELEGATE &rarr; DOCUMENT &rarr; DELAY &rarr; DIRECT</div>
+        <div>DISTRACT &rarr; DELEGATE &rarr; DOCUMENT &rarr; DELAY &rarr; DIRECT</div>
       </div>
 
       <div class="pledge-block">
@@ -274,11 +193,17 @@
         <p>I acknowledge this is a dynamic definition; I will direct my energy toward the safety and well-being of people most vulnerable to harassment in that context, including BIPOC, LGBTQ+, and others facing systemic inequalities.</p>
       </div>
     </div>
+    <p></p>
+    <p></p>
+
+    <!-- Sub-heading in Protest Guerrilla (h2) -->
+    <h2 class="sub-header">This project began at the Agile 2023 conference in Orlando, with 100 pins and the trust of a community.</h2>
+    <p>In collaboration with <a target="_blank" rel="nofollow noopener" href="https://agilecoachcamp.net/">Agile Coach Camp World Wide</a>, <a target="_blank" rel="nofollow noopener" href="https://womeninagile.org/">Women in Agile</a>, and <a target="_blank" rel="nofollow noopener" href="https://www.agileincolor.org/">Agile in Color</a>, <a target="_blank" rel="nofollow noopener" href="https://linkedin.com/in/tobeyaumann">Tobey</a> gifted pins to those who would pledge the following:</p>
 
     <h2 class="sub-header"> Today, we continue to honor the power of trust between two people. Only a handful of Pin Keepers carry the person to person transmission of the pledge. Collaborators on the future of this project are needed.</h2>
-    
-    <!-- 
-      KIT (CONVERTKIT) SIGNUP FORM 
+
+    <!--
+      KIT (CONVERTKIT) SIGNUP FORM
       CHANGE ME: Update action URL with your Kit form endpoint:
       https://app.kit.com/f/YOUR_FORM_ID/subscribe
     -->
@@ -292,9 +217,8 @@
     </p>
     <p class="footer-credit"> All rights to the 5Ds of Bystander Intervention belong to <a target="_blank" rel="nofollow noopener" href="https://www.righttobe.org">RightToBe.org</a> and are shared here as encouragement to attend their excellent de-esclation training.
     </p>
-    
+
   </main>
 
-  
 </body>
 </html>
