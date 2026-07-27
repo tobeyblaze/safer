@@ -46,56 +46,55 @@
       gap: 0.6rem;
     }
 
-    /* CSS Badge graphic matching PDF design */
-    .badge-icon {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      border: 4px solid #eab308;
-      background: conic-gradient(
-        #e11d48 0deg 40deg,
-        #f97316 40deg 80deg,
-        #eab308 80deg 120deg,
-        #22c55e 120deg 160deg,
-        #3b82f6 160deg 200deg,
-        #a855f7 200deg 240deg,
-        #38bdf8 240deg 280deg,
-        #f472b6 280deg 320deg,
-        #ffffff 320deg 340deg,
-        #713f12 340deg 360deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
+    /* CSS Badge graphic (3x Larger) */
+.badge-icon {
+  width: 330px;        /* 110px * 3 */
+  height: 330px;       /* 110px * 3 */
+  border-radius: 50%;
+  border: 12px solid #eab308; /* 4px * 3 */
+  background: conic-gradient(
+    #e11d48 0deg 40deg,
+    #f97316 40deg 80deg,
+    #eab308 80deg 120deg,
+    #22c55e 120deg 160deg,
+    #3b82f6 160deg 200deg,
+    #a855f7 200deg 240deg,
+    #38bdf8 240deg 280deg,
+    #f472b6 280deg 320deg,
+    #ffffff 320deg 340deg,
+    #713f12 340deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 60px rgba(0, 0, 0, 0.5); /* Scaled box-shadow */
+}
 
-    .badge-inner {
-      width: 82px;
-      height: 82px;
-      border-radius: 50%;
-      background: #121214;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Protest Guerrilla', display, sans-serif;
-      line-height: 1;
-    }
+.badge-inner {
+  width: 246px;        /* 82px * 3 */
+  height: 246px;       /* 82px * 3 */
+  border-radius: 50%;
+  background: #121214;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Protest Guerrilla', display, sans-serif;
+  line-height: 1;
+}
 
-    .badge-inner span.top-bottom {
-      font-size: 0.55rem;
-      letter-spacing: 0.5px;
-      color: #d4d4d8;
-    }
+.badge-inner span.top-bottom {
+  font-size: 1.65rem;  /* 0.55rem * 3 */
+  letter-spacing: 1.5px; /* 0.5px * 3 */
+  color: #d4d4d8;
+}
 
-    .badge-inner span.center {
-      font-size: 1.1rem;
-      color: #38bdf8;
-      margin: 2px 0;
-    }
-
+.badge-inner span.center {
+  font-size: 3.3rem;   /* 1.1rem * 3 */
+  color: #38bdf8;
+  margin: 6px 0;       /* 2px * 3 */
+}
     /* Headings & Text */
     h1 {
       font-family: 'Protest Guerrilla', display, sans-serif;
