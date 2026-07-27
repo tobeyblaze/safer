@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CHANGE ME: Page title -->
+  <title>You Are Safe With Me — Pledge</title>
+
+  <!-- Google Fonts Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset & Base Layout */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* CHANGE ME: Background and text colors */
+      background-color: #121214;
+      color: #f4f4f5;
+      font-family: 'Protest Revolution', cursive, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 520px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* CSS Badge graphic matching PDF design */
+    .badge-icon {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid #eab308;
+      background: conic-gradient(
+        #e11d48 0deg 40deg,
+        #f97316 40deg 80deg,
+        #eab308 80deg 120deg,
+        #22c55e 120deg 160deg,
+        #3b82f6 160deg 200deg,
+        #a855f7 200deg 240deg,
+        #38bdf8 240deg 280deg,
+        #f472b6 280deg 320deg,
+        #ffffff 320deg 340deg,
+        #713f12 340deg 360deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge-inner {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      background: #121214;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Protest Guerrilla', display, sans-serif;
+      line-height: 1;
+    }
+
+    .badge-inner span.top-bottom {
+      font-size: 0.55rem;
+      letter-spacing: 0.5px;
+      color: #d4d4d8;
+    }
+
+    .badge-inner span.center {
+      font-size: 1.1rem;
+      color: #38bdf8;
+      margin: 2px 0;
+    }
+
+    /* Headings & Text */
+    h1 {
+      font-family: 'Protest Guerrilla', display, sans-serif;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      /* CHANGE ME: Main heading accent color */
+      color: #38bdf8;
+    }
+
+    .subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: #a1a1aa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .summary {
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      line-height: 1.35;
+      color: #e4e4e7;
+    }
+
+    .highlights {
+      font-size: 0.9rem;
+      color: #a1a1aa;
+      line-height: 1.4;
+    }
+
+    .highlights strong {
+      color: #f4f4f5;
+    }
+
+    /* Form Styles */
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 480px) {
+      form {
+        flex-direction: row;
+      }
+    }
+
+    input[type="email"] {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 2px solid #27272a;
+      background: #18181b;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 1rem;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input[type="email"]:focus {
+      /* CHANGE ME: Input focus border color */
+      border-color: #38bdf8;
+    }
+
+    button {
+      padding: 0.8rem 1.4rem;
+      /* CHANGE ME: Button background color */
+      background: #38bdf8;
+      color: #09090b;
+      border: none;
+      font-family: 'Protest Guerrilla', display, sans-serif;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      border-radius: 6px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .footer-credit {
+      font-size: 0.75rem;
+      color: #71717a;
+      margin-top: 0.5rem;
+    }
+
+    .footer-credit a {
+      color: #a1a1aa;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<h1>PROTOTYPE</h1>
+  
+  <main class="container">
+    <!-- Visual Pride Badge -->
+    <div class="badge-icon" aria-hidden="true">
+      <div class="badge-inner">
+        <span class="top-bottom">YOU ARE</span>
+        <span class="center">SAFE</span>
+        <span class="top-bottom">WITH ME</span>
+      </div>
+    </div>
+
+    <!-- CHANGE ME: Main Title -->
+    <h1>YOU ARE SAFE WITH ME</h1>
+    <p class="subtitle">Pledge to Make Safer Spaces</p>
+
+    <!-- CHANGE ME: Core Pledge Summary from PDF -->
+    <p class="summary">
+      "While I wear this pin, I commit to being an active bystander and prioritizing the needs of those most vulnerable to harassment."
+    </p>
+
+    <!-- CHANGE ME: Brief 5Ds summary line -->
+    <p class="highlights">
+      Practice Bystander Intervention: <strong>Distract • Delegate • Document • Delay • Direct</strong>
+    </p>
+
+    <!-- 
+      KIT (CONVERTKIT) FORM 
+      CHANGE ME: Action URL should point to your Kit Form endpoint:
+      https://app.kit.com/f/YOUR_FORM_ID/subscribe
+    -->
+    <form id="pledge-form" action="https://app.kit.com/f/YOUR_FORM_ID_HERE/subscribe" method="POST">
+      <input 
+        type="email" 
+        name="email_address" 
+        placeholder="Enter your email to take the pledge..." 
+        required 
+        aria-label="Email Address"
+      >
+      <!-- CHANGE ME: Button text -->
+      <button type="submit">Take Pledge</button>
+    </form>
+
+    <!-- CHANGE ME: CC License / Attribution from PDF footer -->
+    <p class="footer-credit">
+      Based on "2025 Pledge to make Safer Spaces" by Tobey Aumann & ACC-WW 2023 (CC BY-NC-ND 4.0)
+    </p>
+  </main>
+
+  <script>
+    // Inline JS for submission handling
+    document.getElementById('pledge-form').addEventListener('submit', function(e) {
+      const button = this.querySelector('button');
+      button.disabled = true;
+      /* CHANGE ME: Loading button text */
+      button.textContent = 'Pledging...';
+    });
+  </script>
+</body>
+</html>
+
+```
