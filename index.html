@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safer Spaces Project - Tobey Aumann</title>
+  <title>Pledge & Sign Up</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="pin-favicon.svg">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,22 +21,9 @@
       max-width: 600px;
       margin: 0 auto;
       background-color: rgb(34, 73, 80);
-      padding: 24px;
+      padding: 32px;
       border-radius: 8px;
       color: #ffffff;
-    }
-
-    /* Fix #1: Improved color contrast for input placeholders to meet WCAG 4.5:1 ratio */
-    input::placeholder {
-      color: #4a4a4a !important;
-      opacity: 1 !important; /* Override default browser opacity lowering */
-    }
-
-    /* Fix #1: Improved color contrast for disclaimer text against dark teal background */
-    .disclaimer {
-      font-size: 0.875rem;
-      color: #f4f4f5; 
-      margin-top: 12px;
     }
 
     .section-title {
@@ -43,36 +34,75 @@
 
     .sub-pledge {
       margin-left: 16px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     a {
       color: #81e6d9;
+    }
+
+    /* -------------------------------------------------------------
+       KIT FORM STYLING OVERRIDES & FIXES
+       ------------------------------------------------------------- */
+    /* Ensure the Kit embedded form container matches your dark teal background */
+    .formkit-form {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      margin-top: 24px !important;
+      box-shadow: none !important;
+    }
+
+    /* Fix #1: High contrast input text and dark accessible placeholders */
+    .formkit-input {
+      color: #111111 !important;
+      background-color: #ffffff !important;
+      border: 1px solid #ccc !important;
+      border-radius: 4px !important;
+    }
+
+    .formkit-input::placeholder {
+      color: #4a4a4a !important;
+      opacity: 1 !important;
+    }
+
+    /* Style Kit submit button to match your theme */
+    .formkit-submit {
+      background-color: #81e6d9 !important;
+      color: #1a202c !important;
+      border-radius: 4px !important;
+      font-weight: bold !important;
+      border: none !important;
+      cursor: pointer;
+    }
+
+    /* Fix #1: High contrast for small text/disclaimers inside Kit forms */
+    .formkit-form .formkit-guarantee,
+    .formkit-form .formkit-disclaimer,
+    .formkit-form p {
+      color: #f4f4f5 !important;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <!-- Fix #2: Corrected Heading Hierarchy (h1 as primary page title) -->
+    <!-- Fix #2: Corrected Heading Hierarchy -->
     <h1>Active Bystander Pledge</h1>
 
-    <!-- Fix #2: Corrected Heading Hierarchy (h2 for major logical section) -->
     <h2 class="section-title">While I wear this pin, I will:</h2>
 
     <div class="sub-pledge">
-      <!-- Fix #2: Corrected Heading Hierarchy (h3 for sub-sections under h2) -->
       <h3>BE AN ACTIVE BYSTANDER</h3>
       <p>I will stay aware of my surroundings and look out for others.</p>
     </div>
 
     <div class="sub-pledge">
-      <!-- Fix #2: Corrected Heading Hierarchy (h3 for sub-sections under h2) -->
       <h3>INTERVENE WITH THE 5Ds</h3>
       <p>Direct, Distract, Delegate, Delay, or Document when it is safe to do so.</p>
     </div>
 
-    <!-- Official Kit Form Script -->
+    <!-- Official Kit Form Embed Script -->
     <script async data-uid="28613b12a1" src="https://tobeyblaze.kit.com/28613b12a1/index.js"></script>
 
     <footer style="margin-top: 30px; font-size: 0.8rem;">
